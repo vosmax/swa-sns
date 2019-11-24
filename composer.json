@@ -1,0 +1,14 @@
+{
+    "name": "vendor/s-w-a-s-n-s",
+    "description": "Description of project SWA SNS.",
+    "authors": [
+        {
+            "name": "Максим",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php": "3.120.0",
+        "doctrine/orm": "*"
+    }
+}
