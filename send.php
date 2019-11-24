@@ -13,12 +13,13 @@ $SsmClient = new SsmClient([
 ]);
 
 try {
-$result = $SsmClient->getParameters([
-    'Names' => ['snsarn'], // REQUIRED
+$result = $SsmClient->getParameter([
+    'Name' => 'snsarn', // REQUIRED
     'WithDecryption' => true || false,
 ]);
 // var_dump($result);
-$arn = $result["Parameters"][0]["Value"];
+$arn = $result["Parameter"]["Value"];
+//print("arn" . $arn);
 
 } catch (AwsException $e) {
     // output error message if fails
